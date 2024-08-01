@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create test from notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+            <div class="navbar">
+           <h2> TEST GENERATOR </h2> 
+            </div>
+            <div class="projectinfo">
+                <h4>Summer Internship:JOVAC FULL STACK WEB DEVELOPMENT</h4>
+           <h4>Project 16:Customized test generator from notes</h4>
+        </div>
+    <div class="container">
+           <form id="noteForm">
+            <label for="noteInput">Upload your notes (text only):</label>
+            <input type="file" id="noteInput" accept=".txt" />
+            <button type="submit">Generate Test</button>
+        </form>
+        <H6>click here to go to <a href="home.html">Home</a></H6>
+        <div id="testContainer" class="hidden">
+            <h2>Your Test</h2>
+            <div id="questions"></div>
+            <button id="submitAnswers">Submit Answers</button>
+            <div id="results" class="hidden"></div>
+        </div>
+    </div>
+    <div class="space">
+        <div class="members">
+            Group <i class="fa-solid fa-users"></i>
+            <select class="selectmember">
+                <option>Group Members(Gladiators 2024) University Rollno:231599xxxx</option>
+                <option>DheerajGaur(dheeraj.gaur_cs23@gla.ac.in) University Rollno:2315990019</option>
+                <option>DiveshSingh(divesh.singh_cs23@gla.ac.in) University Rollno:2315990020</option>
+                <option>NeeleshShakya(neelesh.shakya_cs23@gla.ac.in) University Rollno:2315990040</option>
+                <option>Rahul(rahul.gla2_cs23@gla.ac.in)University Rollno:2315990055</option>
+            </select>
+        </div>
+    </div>
+    <footer>
+        <div class="container1">
+            <p>&copy; <span id="currentYear"></span> TEST GENERATOR. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
